@@ -9,7 +9,7 @@ DATE_COLUMN = 'Date/Time'
 DATA_URL = ('https://s3-us-west-2.amazonaws.com/'
          'streamlit-demo-data/uber-raw-data-sep14.csv.gz')
 def load_data(table):
-    data = pd.read_excel('DitchSmart\pages\Dataset.xlsx', sheet_name = table)
+    data = pd.read_excel('Dataset.xlsx', sheet_name = table)
     return data
 
 

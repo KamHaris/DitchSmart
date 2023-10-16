@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import locale
+
 locale.setlocale(locale.LC_ALL,'')
 st.set_page_config(layout="wide")
 from PIL import Image
@@ -10,7 +11,7 @@ DATE_COLUMN = 'Date/Time'
 DATA_URL = ('https://s3-us-west-2.amazonaws.com/'
          'streamlit-demo-data/uber-raw-data-sep14.csv.gz')
 def load_data(table):
-    data = pd.read_excel('DitchSmart\pages\Dataset.xlsx', sheet_name = table)
+    data = pd.read_excel('pages/Dataset.xlsx', sheet_name = table)
     return data
 
 
