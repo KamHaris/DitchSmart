@@ -25,7 +25,7 @@ def Type1():
         df = df.reset_index()
         df = df[['Source','Maximum Price','Minimum Price','Average','# of Products']]
         col1, col2, col3 = st.columns(3)
-        col1.metric("Average Market Price", locale.currency(df['Average'].mean()))
+        col1.metric("Average Market Price",df['Average'].mean())
         col2.metric("Units on Market", df['# of Products'].sum())
         col3.metric("Time on Market", "10 Days")
         col1 = st.columns(1)
@@ -34,8 +34,7 @@ def Type1():
         df = load_data('RepairCosts')
         df = df[df.Product == 'Grill']
         col1, col2, col3 = st.columns(3)
-        col1.metric("Average Repair Cost", locale.currency(df['Average Cost'].mean()))
-        col2.metric("Potential Issues", df.count().mean().astype('str'))
+        col1.metric("Average Repair Cost", locale.currency(count().mean().astype('str')
         col3.metric("Estimated Labor", "10 Days")
         col1 = st.columns(1)
         st.write(df)
@@ -43,18 +42,18 @@ def Type1():
         df = load_data('ScrapPrices')
         df = df[df.Product == 'Grill']
         col1, col2, col3 = st.columns(3)
-        col1.metric("Average Scrap Value", locale.currency(df['Average Value'].mean()))
-        col2.metric("Min Scrap Value", locale.currency(df['Minimum'].mean()))
-        col3.metric("Maximum Scrap Value", locale.currency(df['Maximum'].mean()))
+        col1.metric("Average Scrap Value", df['Average Value'].mean())
+        col2.metric("Min Scrap Value", df['Minimum'].mean())
+        col3.metric("Maximum Scrap Value", df['Maximum'].mean())
         col1 = st.columns(1)
         st.write(df)
     with tab4:
         df = load_data('Ditch')
         df = df[df.Product == 'Grill']
         col1, col2, col3 = st.columns(3)
-        col1.metric("Average Cost", locale.currency(df['AverageCost'].mean()))
+        col1.metric("Average Cost", df['AverageCost'].mean())
         col2.metric("# of Vendors", df.count().mean().astype('str'))
-        col3.metric("Average Cost", locale.currency(df['Review'].mean()))
+        col3.metric("Average Cost", df['Review'].mean())
         col1 = st.columns(1)
         st.write(df)
 
