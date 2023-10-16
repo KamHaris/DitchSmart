@@ -8,7 +8,6 @@ import streamlit as st
 import time
 import numpy as np
 import pip
-pip.main(["install", "openpyxl"])
 import streamlit.components.v1 as components # Import Streamlit
 st.set_page_config(layout="wide", page_title="About Us", page_icon="📈")
 components.html("""<html><!DOCTYPE html>
