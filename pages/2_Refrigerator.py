@@ -10,14 +10,14 @@ DATE_COLUMN = 'Date/Time'
 DATA_URL = ('https://s3-us-west-2.amazonaws.com/'
          'streamlit-demo-data/uber-raw-data-sep14.csv.gz')
 def load_data(table):
-    data = pd.read_excel('~\Documents\Ditchsmart\Pages\Dataset.xlsx', sheet_name = table)
+    data = pd.read_excel('DitchSmart\pages\Dataset.xlsx', sheet_name = table)
     return data
 
 
 def French_Doors():
     st.header("French Door Refridgerator")
     st.markdown("Recycling, repairing, and reselling your refrigerator is a responsible choice that benefits both the environment and your wallet. Recycling old refrigerators prevents them from ending up in landfills, reducing environmental harm. Repairing and reselling these appliances not only cuts down on waste but also provides affordable options for others while promoting sustainability and resource conservation.")
-    image = Image.open('Pages/Images/French Door Fridge.jpg')
+    image = Image.open('pages/Images/French Door Fridge.jpg')
     st.image(image, width=400)
     tab1, tab2, tab3, tab4 = st.tabs(["Sell It","Repair It","Scrap It","Ditch it"])
     with tab1:
@@ -65,7 +65,7 @@ def French_Doors():
 def Top_drawer():
     st.header("Top Freezer Refrigerator")
     st.markdown("Recycling, repairing, and reselling your refrigerator is a responsible choice that benefits both the environment and your wallet. Recycling old refrigerators prevents them from ending up in landfills, reducing environmental harm. Repairing and reselling these appliances not only cuts down on waste but also provides affordable options for others while promoting sustainability and resource conservation..")
-    image = Image.open('Pages/Images/Top Loading Fridge.jpg')
+    image = Image.open('pages/Images/Top Loading Fridge.jpg')
     st.image(image, width=400)
     tab1, tab2, tab3, tab4 = st.tabs(["Sell It","Repair It","Scrap It","Ditch it"])
     with tab1:
@@ -111,7 +111,7 @@ def Top_drawer():
 def Bottom_Drawer():
     st.header("Top Freezer Refrigerator")
     st.markdown("Recycling, repairing, and reselling your refrigerator is a responsible choice that benefits both the environment and your wallet. Recycling old refrigerators prevents them from ending up in landfills, reducing environmental harm. Repairing and reselling these appliances not only cuts down on waste but also provides affordable options for others while promoting sustainability and resource conservation.")
-    image = Image.open('Pages/Images/Bottom Drawer Freezer.jpg')
+    image = Image.open('pages/Images/Bottom Drawer Freezer.jpg')
     st.image(image, width=400)
     tab1, tab2, tab3, tab4 = st.tabs(["Sell It","Repair It","Scrap It","Ditch it"])
     with tab1:
@@ -157,7 +157,7 @@ def Bottom_Drawer():
 def Unspecified():
     st.header("Unspecified")
     st.markdown("Recycling, repairing, and reselling your refrigerator is a responsible choice that benefits both the environment and your wallet. Recycling old refrigerators prevents them from ending up in landfills, reducing environmental harm. Repairing and reselling these appliances not only cuts down on waste but also provides affordable options for others while promoting sustainability and resource conservation.")
-    image = Image.open('Pages/Images/Other Fridges.jpg')
+    image = Image.open('pages/Images/Other Fridges.jpg')
     st.image(image, width=400)
     tab1, tab2, tab3, tab4 = st.tabs(["Sell It","Repair It","Scrap It","Ditch it"])
     with tab1:

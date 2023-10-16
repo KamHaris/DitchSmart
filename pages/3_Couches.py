@@ -9,14 +9,14 @@ DATE_COLUMN = 'Date/Time'
 DATA_URL = ('https://s3-us-west-2.amazonaws.com/'
          'streamlit-demo-data/uber-raw-data-sep14.csv.gz')
 def load_data(table):
-    data = pd.read_excel('~\Documents\Ditchsmart\Pages\Dataset.xlsx', sheet_name = table)
+    data = pd.read_excel('DitchSmart\pages\Dataset.xlsx', sheet_name = table)
     return data
 
 
 def Type1():
     x = st.header("Sectional Couch")
     st.markdown("Recycling, repairing, and reselling your couch is not just an eco-friendly choice; it's a smart one too. By opting to recycle old couches, you divert them from landfills, reducing environmental impact. Repairing and reselling them not only saves money but also extends the life of your furniture, promoting sustainability and reducing the demand for new resources.")
-    image = Image.open('Pages/Images/Sectional.jpg')
+    image = Image.open('pages/Images/Sectional.jpg')
     st.image(image, width=400)
     tab1, tab2, tab3, tab4 = st.tabs(["Sell It","Repair It","Scrap It","Ditch it"])
     with tab1:
@@ -64,7 +64,7 @@ def Type1():
 def Type2():
     st.header("Couch and Love Seat")
     st.markdown("Recycling, repairing, and reselling your couch is not just an eco-friendly choice; it's a smart one too. By opting to recycle old couches, you divert them from landfills, reducing environmental impact. Repairing and reselling them not only saves money but also extends the life of your furniture, promoting sustainability and reducing the demand for new resources.")
-    image = Image.open('Pages/Images/Sofa.jpg')
+    image = Image.open('pages/Images/Sofa.jpg')
     st.image(image, width=400)
     tab1, tab2, tab3, tab4 = st.tabs(["Sell It","Repair It","Scrap It","Ditch it"])
     with tab1:
@@ -110,7 +110,7 @@ def Type2():
 def Type3():
     st.header("Sleeper Couch")
     st.markdown("Recycling, repairing, and reselling your couch is not just an eco-friendly choice; it's a smart one too. By opting to recycle old couches, you divert them from landfills, reducing environmental impact. Repairing and reselling them not only saves money but also extends the life of your furniture, promoting sustainability and reducing the demand for new resources.")
-    image = Image.open('Pages/Images/Sleeper Couch.jpg')
+    image = Image.open('pages/Images/Sleeper Couch.jpg')
     st.image(image, width=400)
     tab1, tab2, tab3, tab4 = st.tabs(["Sell It","Repair It","Scrap It","Ditch it"])
     with tab1:

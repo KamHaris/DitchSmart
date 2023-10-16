@@ -8,14 +8,14 @@ from PIL import Image
 
 DATE_COLUMN = 'Date/Time'
 def load_data(table):
-    data = pd.read_excel('~\Documents\Ditchsmart\Pages\Dataset.xlsx', sheet_name = table)
+    data = pd.read_excel('DitchSmart\pages\Dataset.xlsx', sheet_name = table)
     return data
 
 
 def Type1():
     x = st.header("Gas Grill")
     st.markdown("Recycling, repairing, and reselling your grill is a savvy way to embrace sustainability and save money. Recycling old grills helps reduce landfill waste and minimize environmental impact. Repairing and reselling these outdoor cooking appliances extends their useful life, offering affordable options to others while supporting a more eco-conscious lifestyle.")
-    image = Image.open('Pages/Images/Gas Grill Outline.jpg')
+    image = Image.open('pages/images/Gas Grill Outline.jpg')
     st.image(image, width=400)
     tab1, tab2, tab3, tab4 = st.tabs(["Sell It","Repair It","Scrap It","Ditch it"])
     with tab1:
@@ -63,7 +63,7 @@ def Type1():
 def Type2():
     st.header("Outdoor Propane Gas Grill")
     st.markdown("Recycling, repairing, and reselling your grill is a savvy way to embrace sustainability and save money. Recycling old grills helps reduce landfill waste and minimize environmental impact. Repairing and reselling these outdoor cooking appliances extends their useful life, offering affordable options to others while supporting a more eco-conscious lifestyle.")
-    image = Image.open('Pages/Images/Gas Grill Outline.jpg')
+    image = Image.open('pages/Images/Gas Grill Outline.jpg')
     st.image(image, width=400)
     tab1, tab2, tab3, tab4 = st.tabs(["Sell It","Repair It","Scrap It","Ditch it"])
     with tab1:
