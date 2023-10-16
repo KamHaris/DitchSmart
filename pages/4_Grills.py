@@ -8,7 +8,7 @@ from PIL import Image
 
 DATE_COLUMN = 'Date/Time'
 def load_data(table):
-    data = pd.read_excel('DitchSmart\pages\Dataset.xlsx', sheet_name = table)
+    data = pd.read_excel('pages/Dataset.xlsx', sheet_name = table)
     return data
 
 
