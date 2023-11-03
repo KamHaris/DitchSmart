@@ -9,13 +9,11 @@ import streamlit.components.v1 as components
 st. set_page_config(layout="wide",page_title="App Instructions")
 
 components.html("""
-<html>
 <head>
     <title style="font-family: 'Comic Sans MS';">Welcome to our page</title>
 </head>
 <body>
     <h1 style="font-family: 'Comic Sans MS';">To use our app, simply select a category from the left.</h1>
-    <img src="Images/R.png" alt="Left Arrow Image" width="50" height="50">
     <p>Once you have selected a category, you will need to choose some details for your product.</p>
     <p>Once the details have been selected, you will be presented with the options available.</p>
     <p>Each option represents a way to "Ditch" your product:</p>
@@ -38,8 +36,7 @@ components.html("""
         </ul>
     </ul>
 </body>
-</html>
-                """)
+""")
 
 
 # In[ ]:
