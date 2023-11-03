@@ -25,7 +25,7 @@ def Type1():
         df = df.reset_index()
         df = df[['Source','Maximum Price','Minimum Price','Average','# of Products']]
         col1, col2, col3 = st.columns(3)
-        col1.metric("Average Market Price",df['Average'].mean())
+        col1.metric("Average Market Price",df['Average'].mean().astype('int'))
         col2.metric("Units on Market", df['# of Products'].sum())
         col3.metric("Time on Market", "10 Days")
         col1 = st.columns(1)
@@ -72,7 +72,7 @@ def Type2():
         df = df.reset_index()
         df = df[['Source','Maximum Price','Minimum Price','Average','# of Products']]
         col1, col2, col3 = st.columns(3)
-        col1.metric("Average Market Price", df['Average'].mean())
+        col1.metric("Average Market Price", df['Average'].mean().astype('int'))
         col2.metric("Units on Market", df['# of Products'].sum())
         col3.metric("Time on Market", "10 Days")
         col1 = st.columns(1)
