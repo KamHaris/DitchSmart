@@ -14,6 +14,7 @@ components.html("""
 </head>
 <body>
     <h1 style="font-family: 'Comic Sans MS';">To use our app, simply select a category from the left.</h1>
+    <img src="https://imgur.com/a/4vV44IR" alt="Left Arrow Image" width="80" height="80">
     <p>Once you have selected a category, you will need to choose some details for your product.</p>
     <p>Once the details have been selected, you will be presented with the options available.</p>
     <p>Each option represents a way to "Ditch" your product:</p>
@@ -36,7 +37,8 @@ components.html("""
         </ul>
     </ul>
 </body>
-""")
+""",
+ height=600)
 
 
 # In[ ]:
